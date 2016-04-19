@@ -27,11 +27,12 @@
             <kind>1</kind>
             <string>if (!instance_exists(objAsteroids))
 {
-    instance_create(random(room_width), random(room_height), objAsteroids);
-    instance_create(random(room_width), random(room_height), objAsteroids);
-    instance_create(random(room_width), random(room_height), objAsteroids);
-    instance_create(random(room_width), random(room_height), objAsteroids);
-    instance_create(random(room_width), random(room_height), objAsteroids);
+    global.level += 1;
+    global.multiply += 1.0;
+    for (i = 0; i &lt; 4 + global.level; i += 1)
+    {
+        instance_create(random(room_width), random(room_height), objAsteroids);
+    }
 }
 </string>
           </argument>

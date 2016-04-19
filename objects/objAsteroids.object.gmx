@@ -35,7 +35,7 @@ image_speed = 0;
 image_index = irandom(2);
 
 direction = random(360);
-speed = 0.5 + random(2);
+speed = 0.4 + (global.level / 10) + random(2);
 </string>
           </argument>
         </arguments>
@@ -61,7 +61,8 @@ speed = 0.5 + random(2);
             <string>instance_create(x, y, objAsteroidsSmall);
 instance_create(x, y, objAsteroidsSmall);
 
-global.points = global.points + 10;
+global.points += (global.multiply * 100);
+global.multiply += 0.1;
 audio_play_sound(sndExplosion, 0, 0);
 </string>
           </argument>
@@ -137,6 +138,7 @@ audio_play_sound(sndExplosion, 0, 0);
     if (global.life &gt; 0)
     {
         global.life -= 1;
+        global.multiply = 1.0;
         instance_create(room_width/2, room_height/2, objPlayer);
     }
     else

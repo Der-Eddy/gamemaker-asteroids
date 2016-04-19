@@ -52,7 +52,8 @@ speed = 0.5 + random(2);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.points = global.points + 15;
+            <string>global.points += (global.multiply * 120);
+global.multiply += 0.1;
 </string>
           </argument>
         </arguments>
