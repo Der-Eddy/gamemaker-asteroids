@@ -14,7 +14,7 @@ Download the latest gmz project file here: [Release versions](https://github.com
 
 Screenshots
 -------------
-![game](https://i.imgur.com/CMkV7Vm.gif)
+![game](https://i.imgur.com/rnmgeOA.gif)
 
 Made with
 -------------
