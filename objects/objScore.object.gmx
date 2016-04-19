@@ -60,7 +60,7 @@ draw_text(64, 32, "Lives: " + string(global.life + 1));
 draw_text(64, 64, "Score: " + string(global.points));
 draw_text(64, 96, "Multiplier: x" + string(global.multiply));
 draw_text(64, 128, "Level: " + string(global.level));
-draw_text(room_width - 200, 32, "FPS: " + string(fps));
+draw_text(room_width - 150, 32, "FPS: " + string(fps));
 </string>
           </argument>
         </arguments>

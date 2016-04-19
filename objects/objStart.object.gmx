@@ -57,7 +57,7 @@ draw_text(room_width/2, room_height/2 - 32, "Asteroids (Test Game)");
 draw_set_font(fntSmall);
 draw_text(room_width/2, room_height/2 + 32, "Press anything to start");
 draw_text(room_width/2, room_height/2 + 64, "WASD or direction keys to move");
-draw_text(room_width/2, room_height/2 + 86, "SPACE to shoot");
+draw_text(room_width/2, room_height/2 + 96, "SPACE to shoot");
 </string>
           </argument>
         </arguments>
