@@ -3,12 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>100</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="5" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,11 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.points = 0;
-global.life = 2;
-global.multiply = 0.0;
-global.level = 0;
-audio_play_sound(sndBackground, 0, 1);
+            <string>instance_destroy();
+instance_create(room_width/2, room_height/2, objPlayer);
 </string>
           </argument>
         </arguments>
@@ -52,34 +49,18 @@ audio_play_sound(sndBackground, 0, 1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_white);
+            <string>draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_font(fntLarge);
+draw_set_color(c_white);
+draw_text(room_width/2, room_height/2 - 32, "Asteroids (Test Game)");
 draw_set_font(fntSmall);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_text(64, 32, "Lives: " + string(global.life + 1));
-draw_text(64, 64, "Score: " + string(global.points));
-draw_text(64, 86, "Multiplier: x" + string(global.multiply));
-draw_text(64, 118, "Level: " + string(global.level));
-draw_text(room_width - 200, 32, "FPS: " + string(fps));
+draw_text(room_width/2, room_height/2 + 32, "Press anything to start");
+draw_text(room_width/2, room_height/2 + 64, "WASD or direction keys to move");
+draw_text(room_width/2, room_height/2 + 86, "SPACE to shoot");
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="82">
-      <action>
-        <libid>1</libid>
-        <id>331</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

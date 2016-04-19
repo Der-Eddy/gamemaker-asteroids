@@ -34,6 +34,7 @@
     <object>objects\objSpawner</object>
     <object>objects\objPlayerDeath</object>
     <object>objects\objGameover</object>
+    <object>objects\objStart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmStart</room>
