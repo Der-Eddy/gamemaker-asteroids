@@ -19,7 +19,9 @@
     <sprite>sprites\sprAsteroidsSmall</sprite>
     <sprite>sprites\sprPlayerDeath</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\stars</background>
+  </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fntSmall</font>
